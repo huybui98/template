@@ -7,11 +7,16 @@
   src: url(./font/SourceSansPro-Regular.ttf);
   font-family: 'Source Sans Pro', sans-serif;
 }
+@font-face {
+  src: url(./font/MartelSans-Regular.ttf);
+  font-family: 'Martel Sans', sans-serif;
+}
 
 :root {
   --primary-color: #00bcd4;
   --text-color: #5f727f;
   --white-color: #fff;
+  --nav-text-color: #3c3950;
 
   --first-font: 'Montserrat', sans-serif;
   --second-font: 'Source Sans Pro', sans-serif;
@@ -43,7 +48,7 @@
   background-color: var(--primary-color);
 }
 .header-container {
-  width: 1171px;
+  max-width: 1171px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -64,9 +69,6 @@
 .header__text {
   font-size: 13px;
   color: var(--text-color);
-}
-.header__phone {
-
 }
 .header__icons-headphone {
   padding-right: 4px;
@@ -121,3 +123,80 @@
   cursor: pointer;
   border-radius: 3px;
 }
+
+
+/* ===== NAV ===== */
+.nav {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--header-border-line);
+}
+.nav-container {
+  margin: 0 auto;
+  max-width: 1171px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--first-font);
+  font-weight: bold;
+  color: var(--nav-text-color)
+}
+.nav-menu {
+  background-color: var(--white-color);
+}
+.nav__list {
+  list-style-type: none;
+  display: flex;
+  font-size: 14px;
+}
+.nav__list-item:not(:last-child) {
+  padding-right: 50px;
+}
+.nav-icons {
+  display: flex;
+  align-items: center;
+  width: 240px;
+}
+.nav__icon-img:first-child {
+  padding-right: 23px;
+}
+.nav__icon-img-last {
+  padding-right: 15px;
+}
+.nav__icon-link {
+  padding-right: 23px;
+  text-decoration: none;
+}
+.nav__box-blue {
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 13px;
+  height: 18px;
+  position: relative;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+.nav__box-blue::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -18px;
+  border: 9px solid var(--primary-color);
+  border-color: transparent var(--primary-color) transparent transparent;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo__icon {
+  padding-right: 5px;
+}
+.logo__title {
+  font-weight: lighter;
+}
+.logo__title-bold {
+  font-weight: bold;
+}
+
