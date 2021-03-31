@@ -13,6 +13,11 @@
   --second-font: 'Source Sans Pro', sans-serif;
 
   --header-border-line: #ced3d6;
+
+  --counter-color-one: #b0de79;
+  --counter-color-two: #7ee0bf;
+  --counter-color-three: #83bce9;
+  --counter-color-four: #a289e8;
 }
 
 * {
@@ -21,7 +26,7 @@
   box-sizing: border-box;
 }
 
-/* ===== HEADER ===== */
+/* ===== HEADER SECTION ===== */
 .header {
   font-family: var(--second-font);
   margin-top: 5px;
@@ -117,7 +122,7 @@
 }
 
 
-/* ===== NAV ===== */
+/* ===== NAV SECTION ===== */
 .nav {
   padding: 32px 0;
   border-bottom: 1px solid var(--header-border-line);
@@ -167,7 +172,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 13px;
   height: 18px;
   position: relative;
@@ -179,8 +184,9 @@
   position: absolute;
   top: 0;
   left: -18px;
-  border: 9px solid var(--primary-color);
-  border-color: transparent var(--primary-color) transparent transparent;
+  border: 9px solid;
+  border-color: transparent var(--primary-color)
+                transparent transparent;
 }
 .nav-logo {
   display: flex;
@@ -196,7 +202,7 @@
   font-weight: bold;
 }
 
-/* ===== BANNER ===== */
+/* ===== BANNER SECTION ===== */
 .banner {
   display: flex;
   justify-content: center;
@@ -247,4 +253,138 @@
   font-weight: 600;
   font-size: 17px;
   letter-spacing: 2px;
+}
+
+/* Responsive Header - Nav - Banner */
+
+
+/* ===== INFORMATION SECTIONS ===== */
+.info {
+  max-width: 1171px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 140px;
+  justify-content: space-between;
+}
+.info-items {
+  width: 344px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+.info-items__text {
+  width: 230px;
+}
+.info-items__text h3 {
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-family: var(--first-font);
+  color: var(--nav-text-color);
+}
+.info-items__text h3:first-child {
+  padding-bottom: 10px;
+}
+.info-items__text p {
+  padding: 40px 0 50px;
+  color: var(--text-color);
+  font-family: var(--second-font);
+  font-size: 16px;
+  line-height: 30px;
+}
+.info-items__btn {
+  border: none;
+  border-radius: 3px;
+  padding: 7px 25px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--first-font);
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+.info-items__img {
+  max-width: 100%;
+}
+
+/* ===== COUNTER SECTION ===== */
+.counter {
+  padding: 140px 0 120px;
+  background-color: #3a3c4b;
+}
+.counter-container {
+  max-width: 1171px;
+  margin: 0 auto;
+  padding: 0 13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.counter-items,
+.counter-items__circle, .counter-items__circle-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counter-items {
+  flex-direction: column;
+}
+.counter-items__circle {
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+}
+.counter-items:nth-child(1) .counter-items__circle {
+  border: 4px solid var(--counter-color-one);
+}
+.counter-items:nth-child(2) .counter-items__circle {
+  border: 4px solid var(--counter-color-two);
+}
+.counter-items:nth-child(3) .counter-items__circle {
+  border: 4px solid var(--counter-color-three);
+}
+.counter-items:nth-child(4) .counter-items__circle {
+  border: 4px solid var(--counter-color-four);
+}
+.counter-items__circle-inner {
+  width: 146px;
+  height: 146px;
+  border-radius: 50%;
+}
+.counter-items:nth-child(1) .counter-items__circle-inner {
+  border: 2px solid var(--counter-color-one);
+}
+.counter-items:nth-child(2) .counter-items__circle-inner {
+  border: 2px solid var(--counter-color-two);
+}
+.counter-items:nth-child(3) .counter-items__circle-inner {
+  border: 2px solid var(--counter-color-three);
+}
+.counter-items:nth-child(4) .counter-items__circle-inner {
+  border: 2px solid var(--counter-color-four);
+}
+.counter-items__number {
+  padding-top: 35px;
+  padding-bottom: 7px;
+  font-size: 50px;
+  letter-spacing: 4px;
+  font-weight: 200;
+  font-family: var(--first-font);
+}
+.counter-items:nth-child(1) .counter-items__number {
+  color: var(--counter-color-one);
+}
+.counter-items:nth-child(2) .counter-items__number {
+  color: var(--counter-color-two);
+}
+.counter-items:nth-child(3) .counter-items__number {
+  color: var(--counter-color-three);
+}
+.counter-items:nth-child(4) .counter-items__number {
+  color: var(--counter-color-four);
+}
+.counter-items__text {
+  font-size: 24px;
+  font-family: var(--second-font);
+  color: var(--white-color);
+  font-weight: 300;
 }
