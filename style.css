@@ -34,7 +34,7 @@
 }
 .container {
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1200px;
 }
 
 /* ===== HEADER SECTION ===== */
@@ -217,7 +217,7 @@
   color: #212331;
 }
 .banner-title {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
   font-size: 30px;
   color: var(--nav-text-color);
@@ -318,9 +318,6 @@
 .counter-items {
   padding-bottom: 120px;
   flex-direction: column;
-}
-.counter-items:not(:last-child) {
-  /* margin-right: 100px; */
 }
 .counter-items__circle {
   width: 172px;
