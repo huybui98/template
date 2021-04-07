@@ -1384,6 +1384,7 @@
 }
 .footer-copyright__container ul {
   list-style: none;
+  flex-wrap: wrap;
 }
 .footer-copyright__container ul > li {
   padding: 0px 15px;
