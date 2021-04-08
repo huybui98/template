@@ -1441,6 +1441,7 @@
   font-size: 32px;
   color: var(--white-color);
 }
+
 .scroll-top:hover {
   cursor: pointer;
 }
