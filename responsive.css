@@ -5,8 +5,8 @@
   .header, .nav-menu, .nav-icons {
     display: none;
   }
-  .nav-logo__title, .icon-bars, .banner-title h2:first-child, .choose-title,
-  .service-title, .core__title, .pricing-title  {
+  .nav-logo__title, .icon-bars, .banner-title h2:first-child,
+  .choose-title, .service-title, .core__title, .pricing-title  {
     font-size: 35px;
   }
   .banner-title__line, .service-wrapper {
@@ -37,7 +37,6 @@
   }
   .banner__arrow-icon {
     padding: 0;
-    /* margin: 0 30px; */
     font-size: 24px;
   }
   .info {
@@ -66,6 +65,9 @@
   }
   .choose-info__block-section, .core__subtitle {
     width: 80%;
+  }
+  .choose-info__block:not(:nth-child(3)) {
+    border-bottom: 1px solid #d6dde0;
   }
   .service-subtitle {
     width: 80%;
@@ -98,21 +100,12 @@
   .footer-main__container, .choose-info__block, .service-more {
     width: 90%;
   }
-  .category__card:first-child .category__items:last-child {
-    padding-bottom: 92px;
-  }
-  .category__items {
-    border-right: none;
-    border-bottom: 1px dashed #5f727f;
-  }
   .category__card:first-child .category__items:first-child::after {
     display: none;
   }
+  .category__card:first-child .category__items:first-child,
   .category__card:last-child .category__items:last-child {
-    border-left: none;
-  }
-  .category__card:first-child .category__items:first-child {
-    border-right: none;
+    border: none;
   }
   .author {
     padding: 50px 0;
@@ -271,21 +264,26 @@
   .choose-info__block-section {
     width: 270px;
   }
+  .choose-info__block:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .choose-info__block:nth-child(3) .choose-info__block-items {
+    border-top: 1px solid #d6dde0;
+  }
+  .choose-info__block:nth-child(3) .choose-info__block-items:first-child {
+    border-bottom: none;
+  }
   .block-items {
     padding: 55px 0 55px 20px;
   }
   .category__card:first-child .category__items:first-child::after {
     display: none;
   }
-  .category__card:first-child .category__items:first-child {
-    border-right: none;
-  }
-  .category__card:first-child .category__items:last-child {
-    padding-bottom: 92px;
-    border-bottom: 1px dashed #5f727f;
-  }
+  .category__card:first-child .category__items:first-child,
   .category__card:last-child .category__items:last-child {
-    border-left: none;
+    border: none;
   }
   .author {
     padding: 100px 0;
@@ -363,17 +361,6 @@
   .footer-copyright__container {
     padding: 10px 0;
   }
-  .choose-info__block:last-child {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  .choose-info__block-items {
-    border-top: 1px solid #d6dde0;
-  }
-  .choose-info__block-items:first-child {
-    border-bottom: none;
-  }
 }
 
 /* ===== PC small width >= 1024px and < 1200px ===== */
@@ -394,8 +381,8 @@
   .header__icons {
     font-size: 13px;
   }
-  .nav-container, .choose-wrap, .info, .service, .core-container, .footer-copyright__container,
-  .career-vacancy, .footer-main__container {
+  .nav-container, .choose-wrap, .info, .service, .core-container,
+  .footer-copyright__container, .career-vacancy, .footer-main__container {
     width: 90%;
     margin: auto;
   }
@@ -421,6 +408,17 @@
   .pricing-main {
     width: 100%;
   }
+  .choose-info__block:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .choose-info__block:nth-child(3) .choose-info__block-items {
+    border-top: 1px solid #d6dde0;
+  }
+  .choose-info__block:nth-child(3) .choose-info__block-items:first-child {
+    border-bottom: none;
+  }
   .career-our__team {
     width: 30%;
   }
@@ -434,18 +432,9 @@
   .category__card:first-child .category__items:first-child::after {
     display: none;
   }
-  .category__card:first-child .category__items:first-child {
-    border-right: none;
-  }
-  .category__card:first-child .category__items:last-child {
-    padding-bottom: 92px;
-    border-bottom: 1px dashed #5f727f;
-  }
+  .category__card:first-child .category__items:first-child,
   .category__card:last-child .category__items:last-child {
-    border-left: none;
-  }
-  .category__card {
-    flex: 100%;
+    border: none;
   }
   .career-container {
     margin: 100px auto;
@@ -462,16 +451,5 @@
   }
   .footer-wrap__logo {
     margin-bottom: 50px;
-  }
-  .choose-info__block:last-child {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  .choose-info__block-items {
-    border-top: 1px solid #d6dde0;
-  }
-  .choose-info__block-items:first-child {
-    border-bottom: none;
   }
 }

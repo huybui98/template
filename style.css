@@ -168,6 +168,7 @@
   padding-right: 15px;
 }
 .nav__icon-link {
+  color: #49465c;
   padding-right: 23px;
   text-decoration: none;
 }
@@ -851,6 +852,7 @@
 }
 .pricing-card__items:nth-child(3) .pricing-card__items-title {
   height: 113px;
+  color: var(--nav-text-color);
   position: relative;
 }
 .pricing-card__items:nth-child(3) .pricing-card__items-title::before {
@@ -1064,7 +1066,7 @@
   font-size: 14px;
   margin-right: 15px;
 }
-.career-btn:first-child {
+.career-btn:first-child, .career-btn:not(:first-child):hover {
   font-weight: bold;
   background-color: var(--white-color);
   border: 1px solid var(--bg-gray-color-one);
