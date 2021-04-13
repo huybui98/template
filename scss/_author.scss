@@ -1,0 +1,56 @@
+/* ===== AUTHOR SECTION ===== */
+.author {
+  padding: 115px 0 110px;
+  background-color: #f1f1f2;
+
+  & > a {
+    color: $bg-gray-color-two;
+  }
+
+  &__icon {
+    font-size: 30px;
+    padding: 100px 20px 0;
+  }
+
+  &-container {
+    @include flexDirect;
+  }
+
+  &__main {
+    @extend .author-container;
+    padding-bottom: 25px;
+
+    &--thumnail {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #b6c6c9;
+    }
+
+    &--name {
+      font-size: 16px;
+      padding: 55px 0 10px;
+      color: $primary-color;
+    }
+
+    &--position {
+      font-size: 14px;
+      color: $bg-gray-color;
+    }
+  }
+
+  &__text {
+    width: 930px;
+    opacity: 0.8;
+    font-size: 24px;
+    text-align: center;
+    color: $nav-text-color;
+  }
+
+  &__comma {
+    font-size: 80px;
+    font-weight: 900;
+    color: $primary-color;
+    font-family: $first-font;
+  }
+}

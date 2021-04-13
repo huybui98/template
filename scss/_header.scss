@@ -1,0 +1,76 @@
+
+/* ===== HEADER SECTION ===== */
+.header {
+  margin-top: 5px;
+  position: relative;
+  background-color: $bg-header;
+  border-bottom: 1px solid $border-line;
+  
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    width: 100%;
+    height: 5px;
+    background-color: $primary-color;
+  }
+  &-container {
+    @include flexWrap;
+    justify-content: space-between;
+    font-family: var(--second-font);
+  }
+  &__info {
+    padding: 10px 50px 10px 0;
+    justify-content: space-between;
+
+    &-address {
+      .header__text {
+        padding-right: 60px;
+      }
+    }
+  }
+  &__text {
+    font-size: 13px;
+    color: $text-color;
+  }
+  &__icons {
+    font-size: 16px;
+    padding-right: 4px;
+    &-headphone {
+      padding-right: 8px;
+    }
+    &-special {
+    color: #f44336;
+    }
+  }
+  &__social-icons {
+    padding: 10px 50px;
+    border: 1px solid;
+    border-color: transparent $border-line;
+  }
+  &__link {
+    color: $text-color;
+    &:not(:last-child) {
+    padding-right: 14px;
+    }
+  }
+  &__menu {
+    padding: 10px 50px;
+    .header__link:not(:last-child) {
+      padding-right: 25px;
+    }
+  }
+  &__box-btn {
+    padding: 10px 0;
+  }
+  &__btn {
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 3px;
+    color: $white-color;
+    font-family: inherit;
+    background-color: #494c64;
+  }
+}

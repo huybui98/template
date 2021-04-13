@@ -1,0 +1,123 @@
+
+/* ===== CATEGORY SECTION ===== */
+.category {
+  &__block {
+    width: 100%;
+    background-color: $primary-color;
+
+    &-items {
+      width: 50%;
+      height: 118px;
+      background-color: $category-main-color;
+
+      &:first-child {
+        border-top-right-radius: 65px;
+      }
+
+      &:last-child {
+        border-top-left-radius: 65px;
+      }
+    }
+  }
+
+  &__main {
+    background-color: $category-main-color;
+
+    &-container {
+      @include flexWrap;
+    }
+  }
+
+  &__card {
+    flex: 50%;
+
+    &-items {
+      @include flexDirect;
+
+      &:last-child {
+        padding-top: 90px;
+        margin-bottom: 92px;
+      }
+    }
+
+    &:first-child {
+      & .category__card--text {
+        // width: 520px;
+      }
+
+      & .category__card-items:first-child {
+        position: relative;
+        border: 1px dashed;
+        border-color: transparent $text-color $text-color transparent;
+
+        &::after {
+          content: "";
+          width: 70px;
+          height: 66px;
+          right: 0;
+          bottom: 0;
+          position: absolute;
+          transform: translate(50%, 50%);
+          border-radius: 50%;
+          background-color: $category-main-color;
+        }
+      }
+    }
+
+    &:last-child {
+      .category__card--text {
+        // width: 510px;
+      }
+
+      & .category__card-items:last-child {
+        border: 1px dashed;
+        border-color: $text-color transparent transparent $text-color;
+      }
+    }
+
+    &--title {
+      font-size: 28px;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
+      color: $white-color;
+    }
+
+    &--text {
+      font-size: 16px;
+      opacity: 0.7;
+      line-height: 25px;
+      text-align: center;
+      color: $white-color;
+    }
+
+    &--btn {
+      font-size: 14px;
+      padding: 7px 19px;
+      margin: 60px 0 92px;
+      letter-spacing: 1px;
+      border-radius: 30px;
+      background-color: transparent;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+
+      &.special {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        color: $white-color;
+        background-color: $primary-color;
+      }
+    }
+  }
+
+  &__thumnail {
+    width: 134px;
+    height: 134px;
+    margin-bottom: 45px;
+
+    & > .category--img {
+      max-width: 100%;
+    }
+  }
+}

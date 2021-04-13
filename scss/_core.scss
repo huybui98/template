@@ -1,0 +1,29 @@
+
+/* ===== CORE SECTION ===== */
+.core {
+  background-color: #01d5c3;
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #42a2e9 , #01d5c3);
+
+  &-container {
+    padding: 100px 0;
+    text-align: center;
+    color: $white-color;
+  }
+
+  &__title {
+    opacity: 0.9;
+    font-size: 50px;
+    padding-bottom: 60px;
+
+    & > span {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+
+  &__subtitle {
+    opacity: 0.8;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
