@@ -187,7 +187,7 @@
   }
 }
 
-/* ===== Small Mobile ===== */
+/* ===== Small Mobile===== */
 @media (max-width: 413px) {
   .pricing-card__items {
     flex: 100%;
