@@ -1,0 +1,85 @@
+
+/* ===== NAV SECTION ===== */
+
+.nav {
+  padding: 32px 0;
+  border-bottom: 1px solid $border-line;
+
+  &-container {
+    @include flexWrap;
+    justify-content: space-between;
+    color: $nav-text-color;
+    font-family: $first-font;
+    font-weight: map-get($font-weight, bold);
+  }
+
+  &__list {
+    font-size: 14px;
+    color: $nav-text-color;
+
+    &-item {
+      & > a {
+        color: $nav-text-color;
+      }
+
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  &__hambur {
+    display: none;
+    color: $nav-text-color;
+  }
+
+  &__icons {
+    width: 240px;
+
+    &-img:first-child {
+      padding: 0 23px 0 20px;
+    }
+
+    &-img-last {
+      padding-right: 20px;
+    }
+
+    & > a {
+      color: #49465c;
+      padding-right: 23px;
+    }
+  }
+
+  &__box-blue {
+    width: 24px;
+    height: 18px;
+    font-size: 13px;
+    font-weight: map-get($font-weight, regular);
+    position: relative;
+    color: $white-color;
+    background-color: $primary-color;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -18px;
+      border: 9px solid;
+      border-right-color: $primary-color;
+    }
+  }
+
+  &__logo {
+    &-icon {
+      padding-right: 5px;
+    }
+
+    &-title {
+      font-weight: map-get($font-weight, regular);
+
+      & > span {
+      font-weight: map-get($font-weight, bold);
+      }
+    }
+  }
+}

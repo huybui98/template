@@ -1,0 +1,61 @@
+/* ===== CHOOSE SECTION ===== */
+.choose {
+  padding: 107px 0 74px;
+  background-color: $bg-choose-color;
+
+  & h3 , & h4 {
+    color: $nav-text-color;
+  }
+
+  & p {
+    color: $text-color;
+  }
+
+  &__title {
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+
+    & > span {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+
+  &__wrapper {
+    @include flexWrap;
+    justify-content: space-between;
+
+    &-info--items {
+      @include flex;
+      padding: 60px 0;
+
+      &:first-child {
+        border-bottom: 1px solid #d6dde0;
+      }
+
+      .choose--items-circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $nav-text-color;
+      }
+
+      .choose--items-section {
+        width: 313px;
+        padding: 15px 0 0 18px;
+
+        & > h4 {
+          font-size: 19px;
+          font-weight: 400;
+          letter-spacing: 1px;
+          padding-bottom: 30px;
+        }
+
+        & > .choose--items-text {
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}

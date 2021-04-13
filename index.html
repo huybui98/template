@@ -4,31 +4,28 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="./responsive.css">
-        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <title>Template with SCSS</title>
     </head>
     <body>
-
         <!-- ===== HEADER SECTION ===== -->
         <header class="header">
-            <div class="header-container container">
-                <div class="header-address-phone">
-                    <div class="header__address">
-                        <div class="header__text">
+            <div class="header-container container d-flex">
+                <div class="header__info d-flex">
+                    <div class="header__info-address">
+                        <p class="header__text">
                             <i class="fas fa-map-marker-alt header__icons"></i>
                             19th Ave New York, NY 95822, USA
-                        </div>
+                        </p>
                     </div>
-                    <div class="header__phone">
-                        <div class="header__text">
+                    <div class="header__info-phone">
+                        <p class="header__text">
                             <i class="fas fa-headphones-alt header__icons header__icons-headphone"></i>
                             +1 916-85-2235
-                        </div>
+                        </p>
                     </div>
                 </div>
-
-                <div class="header-social-icons">
+                <div class="header__social-icons d-flex">
                     <a href="#" class="header__link">
                         <i class="fab fa-twitter header__icons"></i>
                     </a>
@@ -45,185 +42,188 @@
                         <i class="fab fa-instagram header__icons"></i>
                     </a>
                     <a href="#" class="header__link">
-                        <i class="fab fa-youtube header__icon-special header__icons"></i>
+                        <i class="fab fa-youtube header__icons-special header__icons"></i>
                     </a>
                     <a href="#" class="header__link">
                         <i class="fab fa-pinterest-p header__icons"></i>
                     </a>
                 </div>
-
-                <div class="header-menu">
-                    <a href="#" class="header-menu__link">
+                <div class="header__menu d-flex">
+                    <a href="#" class="header__link">
                         <div class="header__text">
                             <i class="fas fa-angle-right header__icons"></i>
                             Contact Us
                         </div>
                     </a>
-                    <a href="#" class="header-menu__link">
+                    <a href="#" class="header__link">
                         <div class="header__text">
                             <i class="fas fa-angle-right header__icons"></i>
                             Sign in
                         </div>
                     </a>
-                    <a href="#" class="header-menu__link">
+                    <a href="#" class="header__link">
                         <div class="header__text">
                             <i class="fas fa-angle-right header__icons"></i>
                             More Menu
                         </div>
                     </a>
-
                 </div>
-                <div class="header-box-btn">
-                    <button class="header__btn">Join Now</button>
+                <div class="header__box-btn">
+                    <button class="header__btn d-flex btn">Join Now</button>
                 </div>
             </div>
         </header>
 
         <!-- ===== NAV SECTION ===== -->
         <nav class="nav">
-            <div class="nav-container container">
-                <div class="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__list-item">HOME</li>
-                        <li class="nav__list-item">PAGES</li>
-                        <li class="nav__list-item">BLOG</li>
-                        <li class="nav__list-item">PORTFOLIOS</li>
-                        <li class="nav__list-item">SHOP</li>
-                        <li class="nav__list-item">FEATURES</li>
-                        <li class="nav__list-item">ELEMENTS</li>
-                    </ul>
-                </div>
-                <a href="#" class="nav-icon__menu">
+            <div class="nav-container container d-flex">
+                <ul class="nav__list d-flex">
+                    <li class="nav__list-item">
+                        <a href="#">HOME</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#">PAGES</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#">BLOG</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#">PORTFOLIOS</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#">SHOP</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#">FEATURES</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#">ELEMENTS</a>
+                    </li>
+                </ul>
+                <a href="#" class="nav__hambur">
                     <i class="fas fa-bars icon-bars"></i>
                 </a>
-                <div class="nav-icons">
-                    <img src="./img/menu-english.png" alt="" class="nav__icon-img">
-                    <a href="#" class="nav__icon-link">
+                <div class="nav__icons d-flex">
+                    <img src="./assets/img/menu-english.png" alt="" class="nav__icons-img">
+                    <a href="#">
                         <i class="fas fa-search"></i>
                     </a>
-                    <img src="./img/menu-icon2.png" alt="" class="nav__icon-img-last">
-                    <div class="nav__box-blue">2</div>
+                    <img src="./assets/img/menu-icon2.png" alt="" class="nav__icons-img-last">
+                    <div class="nav__box-blue d-flex">2</div>
                 </div>
 
-                <div class="nav-logo">
-                    <img src="./img/menu-pentagon.png" alt="" class="nav-logo__icon">
-                    <h1 class="nav-logo__title">THE<span>GEM</span></h1>
+                <div class="nav__logo d-flex">
+                    <img src="./assets/img/menu-pentagon.png" alt="" class="nav__logo-icon">
+                    <h1 class="nav__logo-title">THE<span>GEM</span></h1>
                 </div>
             </div>
         </nav>
 
         <!-- ===== BANNER SECTION ===== -->
-        <div class="banner">
+        <div class="banner d-flex">
             <a href="#">
-                <i class="fas fa-arrow-left banner__arrow-icon"></i>
+                <i class="fas fa-arrow-left banner__arrow"></i>
             </a>
-            <div class="banner-title">
+            <div class="banner__title container">
                 <h2>THE<span>GEM.</span></h2>
                 <h2>THE<span>OPPORTUNITY.</span></h2>
-                <p class="banner-title__line">STEP FORWARD, LEAD THE INNOVATION</p>
-                <button class="banner-title__btn">
+                <h3 class="banner__title-text">STEP FORWARD, LEAD THE INNOVATION</h3>
+                <button class="banner__title-btn btn d-flex">
                     <i class="far fa-gem banner__diamond-icon"></i>
                     <p>OUR SERVICES</p>
                 </button>
             </div>
             <a href="#">
-                <i class="fas fa-arrow-right banner__arrow-icon"></i>
+                <i class="fas fa-arrow-right banner__arrow"></i>
             </a>
         </div>
 
         <!-- ===== INFORMATION SECTION ===== -->
         <div class="info container">
-            <div class="info-items">
-                <div class="info-items__text">
+            <div class="info__items">
+                <div class="info__items--text">
                     <h3>LOREM IPSUM </h3>
                     <h3>DOLOR SIT</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
-                    <button class="info-items__btn">LEARN MORE</button>
+                    <button class="info__items--btn btn">LEARN MORE</button>
                 </div>
-                <div class="info-items___thumnail">
-                    <img src="./img/info-img-1.jpg" alt="" class="info-items__img">
+                <div class="info__items--thumnail">
+                    <img src="./assets/img/info-img-1.jpg" alt="" class="info__items--img">
                 </div>
             </div>
 
-            <div class="info-items">
-                <div class="info-items__text">
+            <div class="info__items">
+                <div class="info__items--text">
                     <h3>LOREM IPSUM </h3>
                     <h3>DOLOR SIT</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
-                    <button class="info-items__btn">LEARN MORE</button>
+                    <button class="info__items--btn btn">LEARN MORE</button>
                 </div>
-                <div class="info-items__thumnail">
-                    <img src="./img/info-img-2.jpg" alt="" class="info-items__img">
+                <div class="info__items--thumnail">
+                    <img src="./assets/img/info-img-2.jpg" alt="" class="info__items--img">
                 </div>
             </div>
 
-            <div class="info-items">
-                <div class="info-items__text">
+            <div class="info__items">
+                <div class="info__items--text">
                     <h3>LOREM IPSUM </h3>
                     <h3>DOLOR SIT</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
-                    <button class="info-items__btn">LEARN MORE</button>
+                    <button class="info__items--btn btn">LEARN MORE</button>
                 </div>
-                <div class="info-items__thumnail">
-                    <img src="./img/info-img-3.jpg" alt="" class="info-items__img">
+                <div class="info__items--thumnail">
+                    <img src="./assets/img/info-img-3.jpg" alt="" class="info__items--img">
                 </div>
             </div>
-
         </div>
 
         <!-- ===== COUNTER SECTION ===== -->
         <div class="counter">
-            <div class="counter-container container">
-                <div class="counter-items">
-                    <div class="counter-items__circle">
-                        <div class="counter-items__circle-inner">
-                            <img src="./img/counter-one.png" alt="error">
+            <div class="counter-container container d-flex">
+                <div class="counter__items d-flex">
+                    <div class="counter__items--circle d-flex">
+                        <div class="counter__items--circle-inner d-flex">
+                            <img src="./assets/img/counter-one.png" alt="error">
                         </div>
                     </div>
-                    <p class="counter-items__number">2189</p>
-                    <p class="counter-items__text">Support Posts</p>
+                    <p class="counter__items--number">2189</p>
+                    <p class="counter__items--text">Support Posts</p>
                 </div>
 
-                <div class="counter-items">
-                    <div class="counter-items__circle">
-                        <div class="counter-items__circle-outer">
-                            <div class="counter-items__circle-inner">
-                                <img src="./img/counter-two.png" alt="error">
-                            </div>
+                <div class="counter__items d-flex">
+                    <div class="counter__items--circle d-flex">
+                        <div class="counter__items--circle-inner d-flex">
+                            <img src="./assets/img/counter-two.png" alt="error">
                         </div>
                     </div>
-                    <p class="counter-items__number">125</p>
-                    <p class="counter-items__text">Customers</p>
+                    <p class="counter__items--number">125</p>
+                    <p class="counter__items--text">Customers</p>
                 </div>
 
-                <div class="counter-items">
-                    <div class="counter-items__circle">
-                        <div class="counter-items__circle-outer">
-                            <div class="counter-items__circle-inner">
-                                <img src="./img/counter-three" alt="error">
-                            </div>
+                <div class="counter__items d-flex">
+                    <div class="counter__items--circle d-flex">
+                        <div class="counter__items--circle-inner d-flex">
+                            <img src="./assets/img/counter-three.png" alt="error">
                         </div>
                     </div>
-                    <p class="counter-items__number">4789</p>
-                    <p class="counter-items__text">Lorem Ipsum Dolor</p>
+                    <p class="counter__items--number">4789</p>
+                    <p class="counter__items--text">Lorem Ipsum Dolor</p>
                 </div>
 
-                <div class="counter-items">
-                    <div class="counter-items__circle">
-                        <div class="counter-items__circle-outer">
-                            <div class="counter-items__circle-inner">
-                                <img src="./img/counter-four" alt="error">
-                            </div>
+                <div class="counter__items d-flex">
+                    <div class="counter__items--circle d-flex">
+                        <div class="counter__items--circle-inner d-flex">
+                            <img src="./assets/img/counter-four.png" alt="error">
                         </div>
                     </div>
-                    <p class="counter-items__number">502</p>
-                    <p class="counter-items__text">Lorem Ipsum Dolor</p>
+                    <p class="counter__items--number">502</p>
+                    <p class="counter__items--text">Lorem Ipsum Dolor</p>
                 </div>
             </div>
         </div>
@@ -231,91 +231,80 @@
         <!-- ===== CHOOSE SECTION ===== -->
         <div class="choose">
             <div class="choose-container container">
-                <h3 class="choose-title">WHY <span>CHOOSING US</span></h3>
-                <div class="choose-wrap">
-                    <div class="choose-info__block">
-                        <div class="choose-info__block-items">
-                            <div class="choose-info__block-circle"></div>
-
-                            <div class="choose-info__block-section">
+                <h3 class="choose__title">WHY <span>CHOOSING US</span></h3>
+                <div class="choose__wrapper d-flex">
+                    <div class="choose__wrapper-info">
+                        <div class="choose__wrapper-info--items">
+                            <div class="choose--items-circle"></div>
+                            <div class="choose--items-section">
                                 <h4>
                                     LOREM IPSUM
                                 </h4>
-                                <p class="choose-info__block-text">
+                                <p class="choose--items-text">
                                     Lorem ipsum dolor sit ametcon sectetur adipisicing elit,
                                     sed do iusmod tempor incidi labore et dolore magna aliqua.
                                 </p>
                             </div>
                         </div>
-
-                        <div class="choose-info__block-items">
-                            <div class="choose-info__block-circle"></div>
-
-                            <div class="choose-info__block-section">
+                        <div class="choose__wrapper-info--items">
+                            <div class="choose--items-circle"></div>
+                            <div class="choose--items-section">
                                 <h4>
                                     LOREM IPSUM
                                 </h4>
-                                <p class="choose-info__block-text">
-                                    Lorem ipsum dolor sit ametcon sectetur adipisicing elit,
-                                    sed do iusmod tempor incidi labore et dolore magna aliqua.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="choose-info__block">
-                        <div class="choose-info__block-items">
-                            <div class="choose-info__block-circle"></div>
-
-                            <div class="choose-info__block-section">
-                                <h4>
-                                    LOREM IPSUM
-                                </h4>
-                                <p class="choose-info__block-text">
-                                    Lorem ipsum dolor sit ametcon sectetur adipisicing elit,
-                                    sed do iusmod tempor incidi labore et dolore magna aliqua.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="choose-info__block-items">
-                            <div class="choose-info__block-circle"></div>
-
-                            <div class="choose-info__block-section">
-                                <h4>
-                                    LOREM IPSUM
-                                </h4>
-                                <p class="choose-info__block-text">
+                                <p class="choose--items-text">
                                     Lorem ipsum dolor sit ametcon sectetur adipisicing elit,
                                     sed do iusmod tempor incidi labore et dolore magna aliqua.
                                 </p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="choose-info__block">
-                        <div class="choose-info__block-items">
-                            <div class="choose-info__block-circle"></div>
-
-                            <div class="choose-info__block-section">
+                    <div class="choose__wrapper-info">
+                        <div class="choose__wrapper-info--items">
+                            <div class="choose--items-circle"></div>
+                            <div class="choose--items-section">
                                 <h4>
                                     LOREM IPSUM
                                 </h4>
-                                <p class="choose-info__block-text">
+                                <p class="choose--items-text">
                                     Lorem ipsum dolor sit ametcon sectetur adipisicing elit,
                                     sed do iusmod tempor incidi labore et dolore magna aliqua.
                                 </p>
                             </div>
                         </div>
-
-                        <div class="choose-info__block-items">
-                            <div class="choose-info__block-circle"></div>
-
-                            <div class="choose-info__block-section">
+                        <div class="choose__wrapper-info--items">
+                            <div class="choose--items-circle"></div>
+                            <div class="choose--items-section">
                                 <h4>
                                     LOREM IPSUM
                                 </h4>
-                                <p class="choose-info__block-text">
+                                <p class="choose--items-text">
+                                    Lorem ipsum dolor sit ametcon sectetur adipisicing elit,
+                                    sed do iusmod tempor incidi labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose__wrapper-info">
+                        <div class="choose__wrapper-info--items">
+                            <div class="choose--items-circle"></div>
+                            <div class="choose--items-section">
+                                <h4>
+                                    LOREM IPSUM
+                                </h4>
+                                <p class="choose--items-text">
+                                    Lorem ipsum dolor sit ametcon sectetur adipisicing elit,
+                                    sed do iusmod tempor incidi labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="choose__wrapper-info--items">
+                            <div class="choose--items-circle"></div>
+                            <div class="choose--items-section">
+                                <h4>
+                                    LOREM IPSUM
+                                </h4>
+                                <p class="choose--items-text">
                                     Lorem ipsum dolor sit ametcon sectetur adipisicing elit,
                                     sed do iusmod tempor incidi labore et dolore magna aliqua.
                                 </p>
@@ -327,9 +316,9 @@
         </div>
 
         <!-- ===== BLOCK ELEMENTS SECTION ===== -->
-        <div class="block-container">
-            <div class="block-card">
-                <div class="block-items">
+        <div class="block d-flex">
+            <div class="block__card">
+                <div class="block__card--items">
                     <h3>
                         01.
                     </h3>
@@ -342,9 +331,8 @@
                     </p>
                 </div>
             </div>
-
-            <div class="block-card">
-                <div class="block-items">
+            <div class="block__card">
+                <div class="block__card--items">
                     <h3>
                         02.
                     </h3>
@@ -357,9 +345,8 @@
                     </p>
                 </div>
             </div>
-
-            <div class="block-card">
-                <div class="block-items">
+            <div class="block__card">
+                <div class="block__card--items">
                     <h3>
                         03.
                     </h3>
@@ -375,50 +362,45 @@
         </div>
 
         <!-- ===== SERVICE SECTION ===== -->
-        <div class="service container">
-            <h3 class="service-title">
+        <div class="service container d-flex">
+            <h3 class="service__title">
                 OUR CASE <span>STUDIES</span>
             </h3>
-
-            <p class="service-subtitle">
+            <p class="service__subtitle">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud nisi ut aliquip ex ea commodo consequat.
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-
-            <div class="service-wrapper">
-                <button class="service-wrapper__btn">ALL</button>
-                <button class="service-wrapper__btn">HOVER BUT</button>
-                <button class="service-wrapper__btn">ACTIVE BUT</button>
-                <button class="service-wrapper__btn">CATEGORY 3</button>
+            <div class="service__wrapper">
+                <button class="service__wrapper--btn btn">ALL</button>
+                <button class="service__wrapper--btn btn">HOVER BUT</button>
+                <button class="service__wrapper--btn btn">ACTIVE BUT</button>
+                <button class="service__wrapper--btn btn">CATEGORY 3</button>
             </div>
-
-            <div class="service-main">
-                <div class="service-main__items">
-                    <div class="service-main__block"></div>
-                    <div class="service-main__block">
-                        <div class="service-main__small"></div>
-                        <div class="service-main__small"></div>
+            <div class="service__main d-grid">
+                <div class="service__main--items d-grid">
+                    <div class="service__main--block"></div>
+                    <div class="service__main--block d-grid">
+                        <div class="service__main--small"></div>
+                        <div class="service__main--small"></div>
                     </div>
                 </div>
-
-                <div class="service-main__items">
-                    <div class="service-main__block">
-                        <div class="service-main__small"></div>
-                        <div class="service-main__small"></div>
-                        <div class="service-main__small"></div>
-                        <div class="service-main__small"></div>
+                <div class="service__main--items d-grid">
+                    <div class="service__main--block d-grid">
+                        <div class="service__main--small"></div>
+                        <div class="service__main--small"></div>
+                        <div class="service__main--small"></div>
+                        <div class="service__main--small"></div>
                     </div>
-                    <div class="service-main__block"></div>
+                    <div class="service__main--block"></div>
                 </div>
             </div>
-
-            <div class="service-more">
-                <div class="service-more__line"></div>
-                <button class="service-more__btn">MORE WORKS</button>
-                <div class="service-more__line"></div>
+            <div class="service__more d-flex">
+                <div class="service__more--line"></div>
+                <button class="service__more--btn btn">MORE WORKS</button>
+                <div class="service__more--line"></div>
             </div>
         </div>
 
@@ -441,80 +423,80 @@
 
         <!-- ===== CATEGORY SECTION ===== -->
         <div class="category">
-            <div class="category-block">
-                <div class="category-items"></div>
-                <div class="category-items"></div>
+            <div class="category__block d-flex">
+                <div class="category__block-items"></div>
+                <div class="category__block-items"></div>
             </div>
 
-            <div class="category-main">
-                <div class="category-container container">
+            <div class="category__main">
+                <div class="category__main-container container d-flex">
                     <div class="category__card">
-                        <div class="category__items">
-                            <div class="category__thumnail">
-                                <img src="./img/category-1.png" alt="error" class="category__img">
+                        <div class="category__card-items d-flex">
+                            <div class="category__thumnail d-flex">
+                                <img src="./assets/img/category-1.png" alt="error" class="category--img">
                             </div>
-                            <h4 class="category__title">
+                            <h4 class="category__card--title">
                                 CONSULTING
                             </h4>
-                            <p class="category__text">
+                            <p class="category__card--text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                             </p>
-                            <button class="category__btn">
+                            <button class="category__card--btn btn">
                                 LEARN MORE
                             </button>
                         </div>
 
-                        <div class="category__items">
-                            <div class="category__thumnail">
-                                <img src="./img/category-2.png" alt="error" class="category__img">
+                        <div class="category__card-items d-flex">
+                            <div class="category__thumnail d-flex">
+                                <img src="./assets/img/category-2.png" alt="error" class="category--img">
                             </div>
-                            <h4 class="category__title">
+                            <h4 class="category__card--title">
                                 DEVELOPMENT
                             </h4>
-                            <p class="category__text">
+                            <p class="category__card--text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                             </p>
-                            <button class="category__btn special">
+                            <button class="category__card--btn btn special">
                                 LEARN MORE
                             </button>
                         </div>
                     </div>
 
                     <div class="category__card">
-                        <div class="category__items">
-                            <div class="category__thumnail">
-                                <img src="./img/category-3.png" alt="error" class="category__img">
+                        <div class="category__card-items d-flex">
+                            <div class="category__thumnail d-flex">
+                                <img src="./assets/img/category-3.png" alt="error" class="category--img">
                             </div>
-                            <h4 class="category__title">
+                            <h4 class="category__card--title">
                                 PROGRAMMING
                             </h4>
-                            <p class="category__text">
+                            <p class="category__card--text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                             </p>
-                            <button class="category__btn">
+                            <button class="category__card--btn btn">
                                 LEARN MORE
                             </button>
                         </div>
 
-                        <div class="category__items">
-                            <div class="category__thumnail">
-                                <img src="./img/category-4.png" alt="error" class="category__img">
+                        <div class="category__card-items d-flex">
+                            <div class="category__thumnail d-flex">
+                                <img src="./assets/img/category-4.png" alt="error" class="category--img">
                             </div>
-                            <h4 class="category__title">
+                            <h4 class="category__card--title">
                                 MARKETING
                             </h4>
-                            <p class="category__text">
+                            <p class="category__card--text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                             </p>
-                            <button class="category__btn special">
+                            <button class="category__card--btn btn special">
                                 LEARN MORE
                             </button>
                         </div>
@@ -524,189 +506,189 @@
         </div>
 
         <!-- ===== AUTHOR SECTION ===== -->
-        <div class="author">
+        <div class="author d-flex">
             <a href="#">
-                <i class="fas fa-arrow-left author-icon"></i>
+                <i class="fas fa-arrow-left author__icon"></i>
             </a>
-            <div class="author-container container">
-                <div class="author-main">
-                    <div class="author-thumnail"></div>
-                    <h4 class="author-name">JENIFFERS BURNS</h4>
-                    <p class="author-position">
+            <div class="author-container container d-flex">
+                <div class="author__main d-flex">
+                    <div class="author__main--thumnail"></div>
+                    <h4 class="author__main--name">JENIFFERS BURNS</h4>
+                    <p class="author__main--position">
                         Creative Heads Inc.
                     </p>
                 </div>
-                <p class="author-text">
+                <p class="author__text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation
                 </p>
-                <p class="author-comma">,,</p>
+                <p class="author__comma">,,</p>
             </div>
             <a href="#">
-                <i class="fas fa-arrow-right author-icon"></i>
+                <i class="fas fa-arrow-right author__icon"></i>
             </a>
         </div>
 
         <!-- ===== PRICING TABLE SECTION ===== -->
         <div class="pricing">
             <div class="pricing-container container">
-                <h3 class="pricing-title">
+                <h3 class="pricing__title">
                     PRICING
                     <span>TABLE</span>
                 </h3>
-                <p class="pricing-text">
+                <p class="pricing__text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <div class="pricing-main">
-                    <div class="pricing-card__items">
-                        <h4 class="pricing-card__items-title">
+                <div class="pricing__card d-flex">
+                    <div class="pricing__card--items">
+                        <h4 class="pricing__card--items-title d-flex">
                             BEGINNER
                         </h4>
-                        <div class="pricing-card__items-per">
-                            <h4 class="pricing-card__items-price">
+                        <div class="pricing__card--items-per">
+                            <h4 class="pricing__card--items-price">
                                 $10
                             </h4>
-                            <p class="pricing-card__items-subtitle">
+                            <p class="pricing__card--items-subtitle">
                                 Per Month
                             </p>
                         </div>
-                        <div class="pricing-card__items-desc">
-                            <p class="pricing-card__items-text">
+                        <div class="pricing__card--items-desc">
+                            <p class="pricing__card--items-text">
                                 Photo sharing school
                             </p>
-                            <p class="pricing-card__items-text">
+                            <p class="pricing__card--items-text">
                                 Drop out ramen hustle
                             </p>
-                            <p class="pricing-card__items-text">
+                            <p class="pricing__card--items-text">
                                 Coworking viral landing
                             </p>
-                            <p class="pricing-card__items-text line-through">
+                            <p class="pricing__card--items-text line-through">
                                 Crush revenue traction
                             </p>
-                            <p class="pricing-card__items-text line-through">
+                            <p class="pricing__card--items-text line-through">
                                 User base minimum viable
                             </p>
-                            <p class="pricing-card__items-text line-through">
+                            <p class="pricing__card--items-text line-through">
                                 Lorem ipsum dolor
                             </p>
-                            <button class="pricing-card__items-btn">
+                            <button class="pricing__card--items-btn btn">
                                 <i class="fas fa-caret-right"></i>
                                 ORDER
                             </button>
                         </div>
                     </div>
-                    <div class="pricing-card__items">
-                        <h4 class="pricing-card__items-title">
+                    <div class="pricing__card--items">
+                        <h4 class="pricing__card--items-title d-flex">
                             ADVANCED
                         </h4>
-                        <div class="pricing-card__items-per">
-                            <h4 class="pricing-card__items-price">
+                        <div class="pricing__card--items-per">
+                            <h4 class="pricing__card--items-price">
                                 $45
                             </h4>
-                            <p class="pricing-card__items-subtitle">
+                            <p class="pricing__card--items-subtitle">
                                 Per Month
                             </p>
                         </div>
-                        <div class="pricing-card__items-desc">
-                            <p class="pricing-card__items-text">
+                        <div class="pricing__card--items-desc">
+                            <p class="pricing__card--items-text">
                                 Photo sharing school
                             </p>
-                            <p class="pricing-card__items-text">
+                            <p class="pricing__card--items-text">
                                 Drop out ramen hustle
                             </p>
-                            <p class="pricing-card__items-text">
+                            <p class="pricing__card--items-text">
                                 Coworking viral landing
                             </p>
-                            <p class="pricing-card__items-text line-through">
+                            <p class="pricing__card--items-text line-through">
                                 Crush revenue traction
                             </p>
-                            <p class="pricing-card__items-text line-through">
+                            <p class="pricing__card--items-text line-through">
                                 User base minimum viable
                             </p>
-                            <p class="pricing-card__items-text line-through">
+                            <p class="pricing__card--items-text line-through">
                                 Lorem ipsum dolor
                             </p>
-                            <button class="pricing-card__items-btn">
+                            <button class="pricing__card--items-btn btn">
                                 <i class="fas fa-caret-right"></i>
                                 ORDER
                             </button>
                         </div>
                     </div>
-                    <div class="pricing-card__items">
-                        <h4 class="pricing-card__items-title">
+                    <div class="pricing__card--items">
+                        <h4 class="pricing__card--items-title d-flex">
                             MASTER
                             <p>The best price/quantity plan</p>
                         </h4>
-                        <div class="pricing-card__items-per">
-                            <h4 class="pricing-card__items-price">
+                        <div class="pricing__card--items-per">
+                            <h4 class="pricing__card--items-price">
                                 $249
                             </h4>
-                            <p class="pricing-card__items-subtitle">
+                            <p class="pricing__card--items-subtitle">
                                 Per Month
                             </p>
                         </div>
-                        <div class="pricing-card__items-desc">
-                            <p class="pricing-card__items-text">
+                        <div class="pricing__card--items-desc">
+                            <p class="pricing__card--items-text">
                                 Photo sharing school
                             </p>
-                            <p class="pricing-card__items-text">
+                            <p class="pricing__card--items-text">
                                 Drop out ramen hustle
                             </p>
-                            <p class="pricing-card__items-text">
+                            <p class="pricing__card--items-text">
                                 Coworking viral landing
                             </p>
-                            <p class="pricing-card__items-text line-through">
+                            <p class="pricing__card--items-text line-through">
                                 Crush revenue traction
                             </p>
-                            <p class="pricing-card__items-text line-through">
+                            <p class="pricing__card--items-text line-through">
                                 User base minimum viable
                             </p>
-                            <p class="pricing-card__items-text line-through">
+                            <p class="pricing__card--items-text line-through">
                                 Lorem ipsum dolor
                             </p>
-                            <button class="pricing-card__items-btn">
+                            <button class="pricing__card--items-btn btn">
                                 <i class="fas fa-caret-right"></i>
                                 ORDER
                             </button>
                         </div>
                     </div>
-                    <div class="pricing-card__items">
-                        <h4 class="pricing-card__items-title">
+                    <div class="pricing__card--items">
+                        <h4 class="pricing__card--items-title d-flex">
                             INSANE
                         </h4>
-                        <div class="pricing-card__items-per">
-                            <h4 class="pricing-card__items-price">
+                        <div class="pricing__card--items-per">
+                            <h4 class="pricing__card--items-price">
                                 $1399
                             </h4>
-                            <p class="pricing-card__items-subtitle">
+                            <p class="pricing__card--items-subtitle">
                                 Per Month
                             </p>
                         </div>
-                        <div class="pricing-card__items-desc">
-                            <p class="pricing-card__items-text">
+                        <div class="pricing__card--items-desc">
+                            <p class="pricing__card--items-text">
                                 Photo sharing school
                             </p>
-                            <p class="pricing-card__items-text">
+                            <p class="pricing__card--items-text">
                                 Drop out ramen hustle
                             </p>
-                            <p class="pricing-card__items-text">
+                            <p class="pricing__card--items-text">
                                 Coworking viral landing
                             </p>
-                            <p class="pricing-card__items-text line-through">
+                            <p class="pricing__card--items-text line-through">
                                 Crush revenue traction
                             </p>
-                            <p class="pricing-card__items-text line-through">
+                            <p class="pricing__card--items-text line-through">
                                 User base minimum viable
                             </p>
-                            <p class="pricing-card__items-text line-through">
+                            <p class="pricing__card--items-text line-through">
                                 Lorem ipsum dolor
                             </p>
-                            <button class="pricing-card__items-btn">
+                            <button class="pricing__card--items-btn btn">
                                 <i class="fas fa-caret-right"></i>
                                 ORDER
                             </button>
@@ -718,14 +700,14 @@
 
         <!-- ===== BUY SECTION ===== -->
         <div class="buy">
-            <div class="buy-container container">
-                <h2 class="buy-title">
-                    THE<img src="./img/buy-pentagon.png" alt="">GEM
+            <div class="buy-container container d-flex">
+                <h2 class="buy__title">
+                    THE<img src="./assets/img/buy-pentagon.png" alt="">GEM
                 </h2>
-                <p class="buy-text">
+                <p class="buy__text">
                     Lorem ipsum dolor sit ametcon sectetur adipisicing elit
                 </p>
-                <button class="buy-btn">
+                <button class="buy__btn btn">
                     GREAT, I WANT BUY NOW!
                 </button>
             </div>
@@ -734,49 +716,49 @@
         <!-- ===== CAREER SECTION ===== -->
         <div class="career">
             <div class="career-container container">
-                <div class="career-our__team">
+                <div class="career__our-team">
                     <h3>OUT TEAMS</h3>
-                    <div class="career-card">
-                        <div class="career-card__items">
-                            <div class="career-card__thumnail"></div>
-                            <div class="career-card__member">
-                                <p class="career-card__name">
+                    <div class="career__card">
+                        <div class="career__card--items">
+                            <div class="career__card--thumnail"></div>
+                            <div class="career__card--member">
+                                <p class="career__card--name">
                                     Emerson Anderson
                                 </p>
-                                <p class="career-card__position">
+                                <p class="career__card--position">
                                     Senior Sales Manager
                                 </p>
-                                <h5 class="career-card__phone">
+                                <h5 class="career__card--phone">
                                     +1 (987) 1625346
                                 </h5>
                             </div>
                         </div>
 
-                        <div class="career-card__items">
-                            <div class="career-card__thumnail"></div>
-                            <div class="career-card__member">
-                                <p class="career-card__name">
+                        <div class="career__card--items">
+                            <div class="career__card--thumnail"></div>
+                            <div class="career__card--member">
+                                <p class="career__card--name">
                                     Emerson Anderson
                                 </p>
-                                <p class="career-card__position">
+                                <p class="career__card--position">
                                     Senior Sales Manager
                                 </p>
-                                <h5 class="career-card__phone">
+                                <h5 class="career__card--phone">
                                     +1 (987) 1625346
                                 </h5>
                             </div>
                         </div>
 
-                        <div class="career-card__items">
-                            <div class="career-card__thumnail"></div>
-                            <div class="career-card__member">
-                                <p class="career-card__name">
+                        <div class="career__card--items">
+                            <div class="career__card--thumnail"></div>
+                            <div class="career__card--member">
+                                <p class="career__card--name">
                                     Emerson Anderson
                                 </p>
-                                <p class="career-card__position">
+                                <p class="career__card--position">
                                     Senior Sales Manager
                                 </p>
-                                <h5 class="career-card__phone">
+                                <h5 class="career__card--phone">
                                     +1 (987) 1625346
                                 </h5>
                             </div>
@@ -784,32 +766,32 @@
                     </div>
                 </div>
 
-                <div class="career-vacancy">
+                <div class="career__vacancy">
                     <h3>OPEN VACANCIES</h3>
-                    <div class="career-wrap">
-                        <div class="career-tabs__list">
-                            <button class="career-btn">
+                    <div class="career__vacancy-wrap">
+                        <div class="career__vacancy--tabs__list">
+                            <button class="career--btn btn">
                                 WEB DESIGNER
                             </button>
-                            <button class="career-btn">
+                            <button class="career--btn btn">
                                 MANAGER
                             </button>
-                            <button class="career-btn">
+                            <button class="career--btn btn">
                                 PROGRAMMER
                             </button>
-                            <button class="career-btn">
+                            <button class="career--btn btn">
                                 SUPPORT STAFF
                             </button>
                         </div>
 
-                        <div class="career-content">
-                            <div class="career-content__desc">
-                                <div class="career-content__thumnail"></div>
-                                <div class="career-content__wrap">
-                                    <h4 class="career-content__position">
+                        <div class="career__vacancy--content">
+                            <div class="career__vacancy--content__desc">
+                                <div class="career__vacancy--content__thumnail"></div>
+                                <div class="career__vacancy--content__wrap">
+                                    <h4 class="career__vacancy--content__position">
                                         WEB DESIGNER
                                     </h4>
-                                    <p class="career-content__text">
+                                    <p class="career__vacancy--content__text">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -818,7 +800,7 @@
                                 </div>
                             </div>
 
-                            <div class="career-content__list">
+                            <div class="career__vacancy--content__list">
                                 <ul>
                                     <li>Lorem ipsum dolor sit amet, consectetur</li>
                                     <li>Adipisicing elit, sed do eiusmod tempor</li>
@@ -841,47 +823,47 @@
         <!-- ===== CONTACT SECTION ===== -->
         <div class="contact">
             <div class="contact-container container">
-                <div class="contact-items">
-                    <div class="contact-box__icon">
-                        <i class="fas fa-map-marker-alt contact-icons"></i>
+                <div class="contact__items d-flex">
+                    <div class="contact__items--box__icon d-flex">
+                        <i class="fas fa-map-marker-alt contact__items--icons"></i>
                     </div>
-                    <h4 class="contact-title">ADDRESS</h4>
-                    <p class="contact-text">
+                    <h4 class="contact__items--title">ADDRESS</h4>
+                    <p class="contact__items--text">
                         908 New Hampshire Avenue <br> Northwest #100, Washington, DC <br>
                         20037, United States
                     </p>
                 </div>
 
-                <div class="contact-items">
-                    <div class="contact-box__icon">
-                        <i class="fas fa-phone-alt contact-icons"></i>
+                <div class="contact__items d-flex">
+                    <div class="contact__items--box__icon d-flex">
+                        <i class="fas fa-phone-alt contact__items--icons"></i>
                     </div>
-                    <h4 class="contact-title">PHONES</h4>
-                    <p class="contact-text">
+                    <h4 class="contact__items--title">PHONES</h4>
+                    <p class="contact__items--text">
                         Phone: +1 916-875-2235 <br>
                         Mobile: +1 916-875-2235 <br>
                         Fax: +1 916-875-2235
                     </p>
                 </div>
 
-                <div class="contact-items">
-                    <div class="contact-box__icon">
-                        <i class="far fa-envelope contact-icons"></i>
+                <div class="contact__items d-flex">
+                    <div class="contact__items--box__icon d-flex">
+                        <i class="far fa-envelope contact__items--icons"></i>
                     </div>
-                    <h4 class="contact-title">CONTACTS</h4>
-                    <p class="contact-text">
+                    <h4 class="contact__items--title">CONTACTS</h4>
+                    <p class="contact__items--text">
                         info@domain.ltd <br>
                         thegem@domain.ltd <br>
                         www.codex-themes.com
                     </p>
                 </div>
 
-                <div class="contact-items">
-                    <div class="contact-box__icon">
-                        <i class="far fa-clock contact-icons"></i>
+                <div class="contact__items d-flex">
+                    <div class="contact__items--box__icon d-flex">
+                        <i class="far fa-clock contact__items--icons"></i>
                     </div>
-                    <h4 class="contact-title">WORKING HOURS</h4>
-                    <p class="contact-text">
+                    <h4 class="contact__items--title">WORKING HOURS</h4>
+                    <p class="contact__items--text">
                         Monday-Friday: 9:00 – 18:00 <br>
                         Saturday: 11:00 – 17:00 <br>
                         Sunday: Closed
@@ -891,18 +873,18 @@
         </div>
 
         <!-- ===== MAP SECTION ===== -->
-        <div class="map">
-            <div class="map-block"></div>
-            <div class="map-block"></div>
+        <div class="map d-flex">
+            <div class="map__block"></div>
+            <div class="map__block"></div>
         </div>
 
         <!-- ===== FOOTER SECTION ===== -->
         <footer class="footer">
-            <div class="footer-main">
-                <div class="footer-main__container container">
-                    <div class="footer-wrap__logo footer-items">
-                        <div class="footer-logo">
-                            <img src="./img/footer-pentagon.png" alt="error">
+            <div class="footer__main">
+                <div class="footer__main-container container d-flex">
+                    <div class="footer__wrap footer__items">
+                        <div class="footer__wrap--logo">
+                            <img src="./assets/img/footer-pentagon.png" alt="error">
                             <h2>THE<span>GEM</span></h2>
                         </div>
                         <p>
@@ -912,8 +894,8 @@
                         </p>
                     </div>
 
-                    <div class="footer-links footer-items">
-                        <h4 class="footer-title">
+                    <div class="footer__link footer__items">
+                        <h4 class="footer--title">
                             USEFUL LINKS
                         </h4>
                         <ul>
@@ -925,51 +907,51 @@
                         </ul>
                     </div>
 
-                    <div class="footer-news footer-items">
-                        <h4 class="footer-title">
+                    <div class="footer__news footer__items">
+                        <h4 class="footer__news--title">
                             NEWSLETTER
                         </h4>
-                        <p class="footer-news__text">
+                        <p class="footer__news--text">
                             Subscribe to our MailChimp newsletter and stay up to date
                             with all events coming straight in your mailbox:
                         </p>
-                        <div class="footer-news__wrap">
+                        <div class="footer__news--wrap">
                             <input type="text" placeholder="Your email address">
-                            <button>
+                            <button class="btn">
                                 <i class="fas fa-angle-right"></i>
                             </button>
                         </div>
                         <p><sup>*</sup><span>Personal data will be encrypted</span></p>
                     </div>
 
-                    <div class="footer-status footer-items">
-                        <h4 class="footer-title">
+                    <div class="footer__status footer__items">
+                        <h4 class="footer--title">
                             RECENT POSTS
                         </h4>
-                        <div class="footer-status__recent first">
-                            <div class="footer-status__thumnail"></div>
-                            <div class="footer-status__desc">
+                        <div class="footer__status--recent first">
+                            <div class="footer__status--thumnail"></div>
+                            <div class="footer__status--desc">
                                 <p>
                                     Proin gravida nibh vel velit auctor aliquet aenean...
                                 </p>
-                                <div class="footer-status__timeline">
+                                <div class="footer__status--timeline">
                                     <p>27 Dec 2015</p>
-                                    <div class="footer-status__comment">
+                                    <div class="footer__status--comment">
                                         <i class="fas fa-comments"></i>
                                         <span>0</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="footer-status__recent">
-                            <div class="footer-status__thumnail"></div>
-                            <div class="footer-status__desc">
+                        <div class="footer__status--recent">
+                            <div class="footer__status--thumnail"></div>
+                            <div class="footer__status--desc">
                                 <p>
                                     Proin gravida nibh vel velit auctor aliquet aenean...
                                 </p>
-                                <div class="footer-status__timeline">
+                                <div class="footer__status--timeline">
                                     <p>27 Dec 2015</p>
-                                    <div class="footer-status__comment">
+                                    <div class="footer__status--comment">
                                         <i class="fas fa-comments"></i>
                                         <span>14</span>
                                     </div>
@@ -980,8 +962,8 @@
                 </div>
             </div>
 
-            <div class="footer-copyright">
-                <div class="footer-copyright__container container">
+            <div class="footer__copyright">
+                <div class="footer__copyright-container container">
                     <p>
                         <i class="far fa-copyright"></i>
                         Copyright 2015
@@ -993,31 +975,31 @@
                         <li>Disclaimer</li>
                         <li>Privacy Policy</li>
                     </ul>
-                    <div class="footer-social__icons">
+                    <div class="footer__social-icons">
                         <a href="#">
-                            <i class="fab fa-twitter footer-icon"></i>
+                            <i class="fab fa-twitter footer__icon--items"></i>
                         </a>
                         <a href="#">
-                            <i class="fab fa-facebook-f footer-icon"></i>
+                            <i class="fab fa-facebook-f footer__icon--items"></i>
                         </a>
                         <a href="#">
-                            <i class="fab fa-linkedin-in footer-icon"></i>
+                            <i class="fab fa-linkedin-in footer__icon--items"></i>
                         </a>
                         <a href="#">
-                            <i class="fab fa-instagram footer-icon"></i>
+                            <i class="fab fa-instagram footer__icon--items"></i>
                         </a>
                         <a href="#">
-                            <i class="fab fa-youtube footer-icon"></i>
+                            <i class="fab fa-youtube footer__icon--items"></i>
                         </a>
                         <a href="#">
-                            <i class="fab fa-google-plus-g footer-icon"></i>
+                            <i class="fab fa-google-plus-g footer__icon--items"></i>
                         </a>
                         <a href="#">
-                            <i class="fab fa-pinterest-p footer-icon"></i>
+                            <i class="fab fa-pinterest-p footer__icon--items"></i>
                         </a>
                     </div>
                 </div>
-                <div class="scroll-top">
+                <div class="scroll-top d-flex">
                     <i class="fas fa-angle-up"></i>
                 </div>
             </div>

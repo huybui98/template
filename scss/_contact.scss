@@ -1,0 +1,70 @@
+
+/* ===== CONTACT SECTION ===== */
+.contact {
+  background-color: #414352;
+
+  &-container {
+    @include flexWrap;
+    justify-content: space-around;
+    padding: 130px 0 0;
+  }
+
+  &__items {
+    @include flexWrap;
+    @include flexDirect;
+    text-align: center;
+    padding-bottom: 110px;
+
+    &:nth-child(1) {
+      .contact__items--box__icon {
+        background-color: #00d4aa;
+      }
+    }
+
+    &:nth-child(2) {
+      .contact__items--box__icon {
+        background-color: $primary-color;
+      }
+    }
+
+    &:nth-child(3) {
+      .contact__items--box__icon {
+        background-color: #3f70ca;
+      }
+    }
+
+    &:nth-child(4) {
+      .contact__items--box__icon {
+        background-color: #8781bd;
+      }
+    }
+
+    &--box__icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 2px;
+
+      .contact__items--icons {
+        font-size: 20px;
+        color: $white-color;
+      }
+    }
+
+    &--title {
+      opacity: 0.9;
+      padding: 27px 0;
+      font-size: 19px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: $white-color;
+    }
+
+    &--text {
+      opacity: 0.4;
+      font-size: 16px;
+      line-height: 25px;
+      text-align: center;
+      color: $white-color;
+    }
+  }
+}

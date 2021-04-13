@@ -1,0 +1,19 @@
+
+/* ===== MAP SECTION ===== */
+.map {
+  background-color: #414352;
+
+  &__block {
+    flex: 50%;
+    height: 455px;
+    background-color: #ccd4da;
+
+    &:first-child {
+      border-top-right-radius: 65px;
+    }
+
+    &:last-child {
+      border-top-left-radius: 65px;
+    }
+  }
+}

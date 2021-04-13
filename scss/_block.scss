@@ -1,0 +1,61 @@
+
+/* ====== BLOCK ELEMENTS SECTION ===== */
+.block {
+  @include flexWrap;
+  width: 100%;
+
+  &__card {
+    flex: 30%;
+
+    &:nth-child(1) {
+      background-color: #aed581;
+    }
+
+    &:nth-child(2) {
+      background-color: $primary-color;
+    }
+
+    &:nth-child(3) {
+      background-color: #37394c;
+
+      & .block__card--items > p {
+        opacity: 0.8;
+        font-weight: map-get($font-weight, light);
+        color: $white-color;
+      }
+    }
+
+    &--items {
+      padding: 55px 0 55px 60px;
+
+      & > h3, & > h4 {
+        color: $white-color;
+      }
+
+      & > h3 {
+        font-size: 80px;
+        letter-spacing: 7px;
+        padding-bottom: 29px;
+      }
+
+      & > h4 {
+        height: 90px;
+        font-size: 34px;
+        font-weight: 300;
+        letter-spacing: 2px;
+
+        & > span {
+          color: #e7ff89;
+          font-weight: map-get($font-weight, bold);
+        }
+      }
+
+      & p {
+        color: #5a635d;
+        font-size: 23px;
+        line-height: 37px;
+        max-width: 400px;
+      }
+    }
+  }
+}

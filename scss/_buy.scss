@@ -1,0 +1,42 @@
+
+/* ===== BUY SECTION ===== */
+.buy {
+  background-color: #ffcd46;
+
+  &-container {
+    @include flexWrap;
+    justify-content: space-between;
+    color: $nav-text-color;
+    padding: 65px 0px 80px;
+  }
+
+  &__title {
+    font-size: 63px;
+    letter-spacing: 2px;
+    font-weight: map-get($font-weight, bold);
+  }
+
+  &__text {
+    width: 400px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    font-weight: map-get($font-weight, light);
+  }
+
+  &__btn {
+    font-size: 19px;
+    padding: 10px 37px;
+    border-radius: 50px;
+    border: 3px solid $nav-text-color;
+    color: $nav-text-color;
+    font-weight: map-get($font-weight, bold);
+    background-color: #ffcd46;
+
+    &:hover {
+      color: $white-color;
+      background-color: $nav-text-color;
+    }
+  }
+}

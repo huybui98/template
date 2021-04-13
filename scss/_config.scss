@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+$white-color: #fff;
+$primary-color: #00bcd4;
+$text-color: #5f727f;
+$border-line: #ced3d6;
+$nav-text-color: #3c3950;
+$bg-header: #f4f6f7;
+
+$first-font: 'Montserrat', sans-serif;
+$second-font: 'Source Sans Pro', sans-serif;
+
+$category-main-color: #393b51;
+$bg-choose-color: #f0f3f2;
+$bg-gray-color: #99a9b5;
+$bg-gray-color-one: #dfe5e8;
+$bg-gray-color-two: #393d50;
+
+$font-weight: (
+  "ultraLight": 200,
+  "light": 300,
+  "regular": 400,
+  "bold": 700
+);
+
+$color-counter: (
+    "one": #b0de79,
+    "two": #7ee0bf,
+    "three": #83bce9,
+    "four": #a289e8
+);
+
+html {
+  font-family: $second-font;
+}
+
+h1, h2, h3, h4, h5, button {
+  font-family: $first-font;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-grid {
+  display: grid;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin flex {
+  display: flex;
+}
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin flexDirect {
+  flex-direction: column;
+}
+
+//  ===== RESPONSIVE ===== //
+@mixin media-ex-sm {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+@mixin media-sm {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin media-md {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin media-lg {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}

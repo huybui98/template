@@ -1,0 +1,49 @@
+
+/* ===== INFORMATION SECTIONS ===== */
+.info, .info__items {
+  @include flex;
+  justify-content: space-between;
+}
+.info {
+  @include flexWrap;
+  padding-top: 140px;
+
+  &__items {
+    width: 344px;
+    padding-bottom: 120px;
+
+    &--text {
+      width: 230px;
+
+      & h3 {
+        font-size: 17px;
+        letter-spacing: 1px;
+        color: $nav-text-color;
+
+        &:first-child {
+          padding-bottom: 10px;
+        }
+      }
+
+      & > p {
+        font-size: 16px;
+        line-height: 30px;
+        padding: 40px 0 50px;
+        color: $text-color;
+      }
+    }
+
+    &--btn {
+      padding: 7px 25px;
+      font-size: 14px;
+      border-radius: 3px;
+      color: $white-color;
+      background-color: $primary-color;
+      font-weight: map-get($font-weight, bold);
+    }
+
+    &--img {
+      max-width: 100%;
+    }
+  }
+}

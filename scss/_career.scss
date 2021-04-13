@@ -1,0 +1,145 @@
+
+/* ===== CAREER SECTION ===== */
+.career {
+  & h3, & h4 {
+    color: $nav-text-color;
+  }
+
+  &-container {
+    @include flexWrap;
+    margin: 130px auto 120px;
+    justify-content: space-between;
+
+    & h3 {
+      font-size: 24px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__our-team {
+    width: 362px;
+
+    .career__card--items {
+      @include flexWrap;
+      padding: 39px 0 40px;
+      background-color: $bg-choose-color;
+
+      &:not(:last-child) {
+        margin-bottom: 28px;
+      }
+
+      .career__card--thumnail {
+        width: 80px;
+        height: 80px;
+        margin: 0 20px 0 33px;
+        border-radius: 50%;
+        background-color: $bg-gray-color-one;
+      }
+
+      .career__card--name {
+        color: #545266;
+        font-size: 24px;
+        padding-bottom: 15px;
+        font-weight: map-get($font-weight, light);
+      }
+
+      .career__card--position {
+        opacity: 0.7;
+        font-size: 14px;
+        color: $text-color;
+      }
+
+      .career__card--phone {
+        padding-top: 10px;
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__vacancy {
+    width: 765px;
+
+    .career--btn {
+      width: 160px;
+      height: 50px;
+      font-size: 14px;
+      color: $text-color;
+      margin: 0 15px 15px 0;
+
+      &:first-child, &:not(:first-child):hover {
+        background-color: $white-color;
+        border: 1px solid $bg-gray-color-one;
+        font-weight: map-get($font-weight, bold);
+      }
+
+      &:not(:first-child) {
+        background-color: $bg-header;
+      }
+    }
+
+    &--content {
+      padding: 41px 26px 42px 40px;
+      border: 1px solid $bg-gray-color-one;
+
+      &__desc {
+        @include flexWrap;
+        margin-bottom: 38px;
+        justify-content: space-between;
+      }
+
+      &__thumnail {
+        width: 350px;
+        height: 230px;
+        background-color: $bg-gray-color-one;
+      }
+
+      &__wrap {
+        width: 310px;
+      }
+
+      &__position {
+        font-size: 19px;
+        padding-bottom: 23px;
+      }
+
+      &__text {
+        font-size: 16px;
+        line-height: 24px;
+        color: $text-color;
+      }
+
+      &__list {
+        @include flexWrap;
+        color: $text-color;
+        justify-content: space-between;
+
+        & ul {
+          line-height: 36px;
+
+          &:first-child {
+            padding-left: 15px;
+          }
+
+          &:last-child {
+            padding-right: 25px;
+          }
+
+          & > li {
+            position: relative;
+
+            &::before {
+              content: "";
+              width: 6px;
+              height: 6px;
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateX(-15px);
+              background-color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
