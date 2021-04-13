@@ -7,7 +7,6 @@
     &__btn, &__info-address {
       display: none;
     }
-
     &-container {
       padding: 5px 0;
       justify-content: center;
@@ -79,9 +78,11 @@
   }
 
   .counter {
-    flex: 50%;
+    &__items {
+      flex: 50%;
+    }
     &-container {
-      justify-content: center;
+      justify-content: space-around;
     }
   }
 
@@ -127,7 +128,8 @@
       padding-bottom: 60px;
     }
     &__main {
-      display: none;
+      width: 90%;
+      // margin: 0 auto;
     }
     &__wrapper {
       text-align: center;
@@ -166,8 +168,11 @@
       &--text {
         width: 90%;
       }
-      &:first-child > .category__card-items {
+      &:first-child > .category__card-items:first-child::after {
         display: none;
+      }
+      & > .category__card-items:last-child {
+        padding-top: unset;
       }
       &:first-child > .category__card-items:first-child,
       &:last-child > .category__card-items:last-child {
@@ -193,6 +198,7 @@
       width: 85%;
     }
     &__card {
+      width: 90%;
       &--items {
         flex: 50%;
       }
@@ -255,8 +261,12 @@
       padding-bottom: 50px;
     }
     &__wrap {
+      &--logo {
+        @include flexCenter;
+      }
       & > p {
         width: unset;
+        text-align: center;
       }
     }
     &__link, &__news, &__status {
@@ -283,6 +293,11 @@
 
 /* ===== Small Mobile width < 576px ===== */
 @include media-ex-sm  {
+  .counter {
+    &__items {
+      flex: 100%;
+    }
+  }
   .pricing__card--items {
     flex: 100%;
   }
@@ -294,10 +309,6 @@
   }
   .career__card--member, .career-container h3 {
     text-align: center;
-  }
-  .career__vcancy--tabs__list {
-    @include flexCenter;
-    @include flexWrap;
   }
 }
 
@@ -357,21 +368,9 @@
   .info {
     width: 90%;
     margin: auto;
+    justify-content: space-around;
     &__items {
-      width: 215px;
-    }
-  }
-
-  .counter {
-    &__items {
-      &--circle {
-        width: 125px;
-        height: 125px;
-        &-inner {
-          width: 100px;
-          height: 100px;
-        }
-      }
+      width: 300px;
     }
   }
 
@@ -393,148 +392,148 @@
             }
           }
         }
-      }
-    }
-    &--items-section {
-      width: 270px;
-    }
-
-    .block {
-      &__card {
-        &--items {
-          padding: 55px 0 55px 20px;
+        & .choose--items-section {
+          width: 280px;
         }
       }
     }
+  }
+  .block {
+    &__card {
+      &--items {
+        padding: 55px 0 55px 20px;
+      }
+    }
+  }
 
-    .service {
+  .service {
+    width: 90%;
+    margin: auto;
+  }
+
+  .core {
+    &-container {
       width: 90%;
       margin: auto;
-      &__main {
+    }
+  }
+
+  .category {
+    &__card {
+      &:first-child .category__card-items:first-child::after {
         display: none;
       }
-    }
-
-    .core {
-      &-container {
-        width: 90%;
-        margin: auto;
+      &:first-child .category__card-items:first-child,
+      &:last-child .category__card-items:last-child {
+        border: none;
+      }
+      &--text {
+        width: 370px;
       }
     }
+  }
 
-    .category {
-      &__card {
-        &:first-child .category__card-items:first-child::after {
-          display: none;
-        }
-        &:first-child .category__card-items:first-child,
-        &:last-child .category__card-items:last-child {
-          border: none;
-        }
+  .author {
+    padding: 100px 0;
+    &__text {
+      width: unset;
+    }
+  }
+
+  .pricing {
+    &-container {
+      @include flexCenter;
+      @include flexDirect;
+    }
+    & p {
+      width: 90%;
+    }
+    &__card {
+      width: 90%;
+      &--items {
+        flex: 50%;
       }
     }
+  }
 
-    .author {
-      padding: 100px 0;
-      &__text {
+  .buy {
+    &-container {
+      @include flexDirect;
+      text-align: center;
+    }
+    &__title {
+      font-size: 80px;
+    }
+    &__text {
+      padding-bottom: 35px;
+    }
+  }
+
+  .career {
+    &-container {
+      margin: 100px auto;
+    }
+    &__vacancy {
+      width: 90%;
+      margin: auto;
+      &--content__thumnail {
+        margin: 0 auto 15px;
+      }
+      &--content__wrap {
         width: unset;
       }
     }
+    &__our-team {
+      width: 90%;
+      margin: 0 auto 100px;
+    }
+  }
 
-    .pricing {
+  .contact {
+    &-container {
+      width: 90%;
+      margin: auto;
+    }
+  }
+
+  .footer {
+    &__main {
       &-container {
-        @include flexCenter;
-        @include flexDirect;
+        width: 90%;
+        margin: auto;
       }
+    }
+    &__wrap, &__news {
+      margin: 0;
+      padding-right: 30px;
+    }
+    &__wrap {
+      padding-bottom: 85px;
       & p {
-        width: 90%;
+        width: unset;
       }
-      &__card {
-        width: 100%;
-        &--items {
-          flex: 50%;
+    }
+    &__items {
+      width: 50%;
+    }
+    &__link {
+      margin-bottom: 40px;
+      & ul {
+        font-size: 16px;
+        & li:not(:last-child) {
+          border-bottom: 1px solid #393d50;
         }
       }
     }
-
-    .buy {
+    &__copyright {
+      @include flexCenter;
       &-container {
-        @include flexDirect;
-        text-align: center;
+        padding: 10px 0;
+        line-height: 35px;
+        flex-direction: column-reverse;
       }
-      &__title {
-        font-size: 80px;
-      }
-      &__text {
-        padding-bottom: 35px;
-      }
-    }
-
-    .career {
-      &-container {
-        margin: 100px auto;
-      }
-      &__vacancy {
-        width: 90%;
-        margin: auto;
-        &--content__thumnail {
-          margin: 0 auto 15px;
-        }
-        &--content__wrap {
-          width: unset;
-        }
-      }
-      &__our-team {
-        width: 90%;
-        margin: 0 auto 100px;
-      }
-    }
-
-    .contact {
-      &-container {
-        width: 90%;
-        margin: auto;
-      }
-    }
-
-    .footer {
-      &__main {
-        &-container {
-          width: 90%;
-          margin: auto;
-        }
-      }
-      &__wrap, &__news {
-        margin: 0;
-        padding-right: 30px;
-      }
-      &__wrap {
-        & p {
-          width: unset;
-        }
-      }
-      &__items {
-        width: 50%;
-      }
-      &__link {
-        margin-bottom: 40px;
-        & ul {
-          font-size: 16px;
-          & li:not(:last-child) {
-            border-bottom: 1px solid #393d50;
-          }
-        }
-      }
-      &__copyright {
+      & ul {
         @include flexCenter;
-        &-container {
-          padding: 10px 0;
-          line-height: 35px;
-          flex-direction: column-reverse;
-        }
-        & ul {
-          @include flexCenter;
-        }
       }
     }
   }
@@ -576,6 +575,8 @@
 
   .choose {
     &__wrapper {
+      width: 90%;
+      margin: auto;
       &-info {
         &:last-child {
           @include flex;
@@ -583,7 +584,7 @@
           justify-content: space-between;
         }
         &:nth-child(3) {
-          &--items {
+          & .choose__wrapper-info--items {
             border-top: 1px solid #d6dde0;
             &:first-child {
               border-bottom: none;
@@ -591,6 +592,9 @@
           }
         }
       }
+    }
+    &--items-section {
+      width: 270px;
     }
   }
 
@@ -601,12 +605,17 @@
 
   .category {
     &__card {
-      &:first-child .category__card-items:first-child::after {
-        display: none;
+      &:first-child .category__card-items:first-child {
         border: none;
+        &::after {
+          display: none;
+        }
       }
       &:last-child .category__card-items:last-child {
         border: none;
+      }
+      &--text {
+        width: 400px;
       }
     }
     &__vacancy {
@@ -630,11 +639,8 @@
       @include flexCenter;
       @include flexDirect;
     }
-    & p {
+    & p, &__card {
       width: 90%;
-    }
-    &__card {
-      width: 100%;
     }
   }
 
@@ -660,6 +666,8 @@
       margin: 0 auto 100px;
     }
     &__vacancy {
+      width: 90%;
+      margin: 0 auto;
       &--content__thumnail {
         margin: 0 auto 15px;
       }
@@ -670,8 +678,17 @@
   }
 
   .footer {
+    &__main-container {
+      justify-content: space-around;
+    }
     &__wrap {
       margin-bottom: 50px;
+    }
+    &__status {
+      padding-top: 30px;
+    }
+    &__copyright-container {
+      width: 90%;
     }
   }
 }

@@ -5,8 +5,19 @@
   padding: 170px 0 100px;
   background-color: #e3e8eb;
 
+  & a {
+    &:first-child {
+      .banner__arrow {
+        padding-left: 25px;
+      }
+    }
+    &:last-child {
+      .banner__arrow {
+        padding-right: 25px;
+      }
+    }
+  }
   &__arrow {
-    padding: 0 25px;
     font-size: 30px;
     color: #212331;
   }
